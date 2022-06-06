@@ -9,8 +9,7 @@ func main() {
 		2: "play_array",
 	}
 
-	var choice int
-	choice = choose(functions)
+	choice := choose(functions)
 
 	switch choice {
 	case 1:
@@ -46,7 +45,7 @@ func play_array() {
 	}
 
 	var val int
-	for index, _ := range arr {
+	for index := range arr {
 		arr[index] = val + 1
 	}
 
